@@ -1,7 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('/Users/trdung/Documents/Project-ADY/price.csv', sep = ';')
+df = pd.read_csv('/Users/trdung/Documents/Project-ADY/price.csv')
 
-df['Gold Price (VND)'] = df['Gold price (per ounce)'] * df['USDtoVND']
-df['Date'] = pd.to_datetime(df['Date'], format = '%d/%m/%y')
+df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
 

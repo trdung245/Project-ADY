@@ -1,9 +1,10 @@
 import pandas as pd
 
-df = pd.read_csv('/Users/trdung/Documents/Project-ADY/price.csv', sep = ';')
+df = pd.read_csv('/Users/trdung/Documents/Project-ADY/price.csv')
 
-df['Gold Price (VND)'] = df['Gold price (per ounce)'] * df['USDtoVND']
-df['Date'] = pd.to_datetime(df['Date'], format = '%d/%m/%y')
+df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
 
-correlation = df['Gold Price (VND)'].corr(df['USDtoVND'])
-print(f'Correlation between the price of gold and USD: {correlation}')
+buying_correlation = df['Buying_price'].corr(df['USD to VND'])
+print(f'Correlation between the buying price of gold and USD: {buying_correlation}')
+selling_correlation = df['Selling_price'].corr(df['USD to VND'])
+print(f'Correlation between the selling price of gold and USD: {selling_correlation}')

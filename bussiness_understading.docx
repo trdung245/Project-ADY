@@ -1,0 +1,10 @@
+Problem to be solved:
+- Relationship and correlation between gold prices and the USD exchange rate
+- Predict future price movements based on historical data
+
+Approach to the problem:
+- Gather Data: Scrape historical gold price and USD exchange rate data from reliable sources.
+- Preprocess the Data: Clean the data to remove any inconsistencies, missing values, and format it for analysis.
+- Analyze the Data: Calculate statistical measures like the mean, median, variance, and extremes (min, max) to identify key insights. Also, identify specific days and months with the highest prices.
+- Visualize the Data: Create visual representations of trends, including monthly averages and daily price fluctuations.
+- Predict Future Prices: Apply linear regression to model and predict future gold and USD prices, and evaluate the correlation between these two variables.
